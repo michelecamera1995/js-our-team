@@ -1,6 +1,9 @@
 console.log('JS-OK')
 
 
+
+let listCard = document.getElementsByClassName('team-container');
+
 // Array del team
 
 let teamCard = [
@@ -39,11 +42,10 @@ let teamCard = [
 
 for (i = 0; i < teamCard.length; i++); {
 
-    let listCard = document.getElementById('team');
-
     teamCard = document.createElement('div');
+
+    teamCard.className = 'team-card';
 
     listCard.appendChild(teamCard);
 
 };
-
