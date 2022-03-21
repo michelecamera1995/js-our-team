@@ -29,13 +29,11 @@ let teamCard = [
 
 for (i = 0; i < teamCard.length; i++); {
 
-    let listCard = document.getElementsByClassName('team-container');
+    let listCard = document.getElementById('team');
 
     teamCard = document.createElement('div');
 
-    teamCard.innerHTML = '';
-
     listCard.appendChild(teamCard);
 
-}
+};
 
