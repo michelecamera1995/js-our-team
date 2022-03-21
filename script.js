@@ -1,13 +1,9 @@
 console.log('JS-OK')
 
 
-let teamCards = document.getElementsByClassName('team-cards');
+// Array del team
 
-let teamCard = document.createElement('div');
-
-teamCard.classList.add('team-card');
-
-teamCards = [
+let teamCard = [
     {
         nome: 'Wayne Burnett',
         ruolo: 'Founder e CEO',
@@ -31,6 +27,15 @@ teamCards = [
 ];
 
 
-console.log(teamCards[0].nome);
+for (i = 0; i < teamCard.length; i++); {
 
+    let listCard = document.getElementsByClassName('team-container');
+
+    teamCard = document.createElement('div');
+
+    teamCard.innerHTML = '';
+
+    listCard.appendChild(teamCard);
+
+}
 
