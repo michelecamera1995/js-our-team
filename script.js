@@ -24,6 +24,16 @@ let teamCard = [
         ruolo: 'Social Media Manager',
         "background-image": 'img/angela-lopez-social-media-manager.jpg',
     },
+    {
+        nome: 'Scott Estrada ',
+        ruolo: 'Developer',
+        "background-image": 'img/scott-estrada-developer.jpg',
+    },
+    {
+        nome: 'Barbara Ramos',
+        ruolo: 'Graphic Designer',
+        "background-image": 'img/barbara-ramos-graphic-designer.jpg',
+    },
 ];
 
 
