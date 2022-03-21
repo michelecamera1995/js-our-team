@@ -1,32 +1,32 @@
+console.log('JS-OK')
 
 
+let teamCard = document.getElementsByClassName('team-cards');
 
+let teamCards = document.createElement('div');
 
-
-
-
-
-let cars = [
+teamCards = [
     {
-        nome: "Wayne Barnett",
-        "type": "minivan",
-        "registration": new Date('2017-01-03'),
-        "capacity": 7
+        nome: 'Wayne Burnett',
+        ruolo: 'Founder e CEO',
+        "background-image": 'img/wayne-barnett-founder-ceo.jpg',
     },
     {
-        "color": "red",
-        "type": "station wagon",
-        "registration": new Date('2018-03-03'),
-        "capacity": 5
+        nome: 'Angela Carol',
+        ruolo: 'Chief Editor',
+        "background-image": 'img/angela-caroll-chief-editor.jpg',
     },
     {
-        ...
+        nome: 'Walter Gordon',
+        ruolo: 'Office Manager',
+        "background-image": 'img/walter-gordon-office-manager.jpg',
     },
-    ...
-  ]
-
-
-
+    {
+        nome: 'Angela Lopez ',
+        ruolo: 'Social Media Manager',
+        "background-image": 'img/angela-lopez-social-media-manager.jpg',
+    },
+];
 
 
 
