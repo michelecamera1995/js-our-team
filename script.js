@@ -1,9 +1,11 @@
 console.log('JS-OK')
 
 
-let teamCard = document.getElementsByClassName('team-cards');
+let teamCards = document.getElementsByClassName('team-cards');
 
-let teamCards = document.createElement('div');
+let teamCard = document.createElement('div');
+
+teamCard.classList.add('team-card');
 
 teamCards = [
     {
@@ -28,5 +30,7 @@ teamCards = [
     },
 ];
 
+
+console.log(teamCards[0].nome);
 
 
