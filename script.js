@@ -1,51 +1,82 @@
 console.log('JS-OK')
 
-
-
-let listCard = document.getElementsByClassName('team-container');
-
 // Array del team
 
-let teamCard = [
+const teamMembers = [
     {
         nome: 'Wayne Burnett',
         ruolo: 'Founder e CEO',
-        "background-image": 'img/wayne-barnett-founder-ceo.jpg',
+        image: 'img/wayne-barnett-founder-ceo.jpg',
     },
     {
         nome: 'Angela Carol',
         ruolo: 'Chief Editor',
-        "background-image": 'img/angela-caroll-chief-editor.jpg',
+        image: 'img/angela-caroll-chief-editor.jpg',
     },
     {
         nome: 'Walter Gordon',
         ruolo: 'Office Manager',
-        "background-image": 'img/walter-gordon-office-manager.jpg',
+        image: 'img/walter-gordon-office-manager.jpg',
     },
     {
         nome: 'Angela Lopez ',
         ruolo: 'Social Media Manager',
-        "background-image": 'img/angela-lopez-social-media-manager.jpg',
+        image: 'img/angela-lopez-social-media-manager.jpg',
     },
     {
         nome: 'Scott Estrada ',
         ruolo: 'Developer',
-        "background-image": 'img/scott-estrada-developer.jpg',
+        image: 'img/scott-estrada-developer.jpg',
     },
     {
         nome: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
-        "background-image": 'img/barbara-ramos-graphic-designer.jpg',
-    },
+        image: 'img/barbara-ramos-graphic-designer.jpg',
+    }
 ];
 
+createTeamCard(teamMembers);
 
-for (i = 0; i < teamCard.length; i++); {
 
-    teamCard = document.createElement('div');
 
-    teamCard.className = 'team-card';
+console.table(teamMembers);
 
-    listCard.appendChild(teamCard);
+function createTeamCard(members) {
+    let listCard = document.querySelector('.team-container');
 
-};
+    for (let i = 0; i < members.length; i++) {
+        const card = createCard(members[i]);
+        listCard.append(card);
+    };
+}
+
+function createCard(members) {
+    let card = document.createElement('div');
+    card.className = "team-card";
+    card.innerHTML = `
+                <div class="team-card">
+                <div class="card-image">
+                  <img
+                    src="${members.image}"
+                    alt="${members.nome}"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3>${members.nome}</h3>
+                  <p>${members.ruolo}</p>
+                </div>
+        ` ;
+    return card;
+}
+
+
+
+
+
+
+
+
+
+
+
+
